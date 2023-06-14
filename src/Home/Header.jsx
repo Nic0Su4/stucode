@@ -2,9 +2,9 @@ import Hero from "../img/Hero.png"
 
 const Header = () => {
   return (
-    <div
+    <header
       className="flex flex-col justify-center items-center"
-      
+
     >
       <img
         className="w-2/3 mx-auto"
@@ -22,7 +22,7 @@ const Header = () => {
         href=""
         className="text-red-600 mx-auto text-center text-xl font-medium px-8 py-3 bg-white rounded-xl mb-4 hover:bg-gray-300 hover:text-red-700 transition duration-300 ease-in-out"  
       >¡Comienza ya!</a>
-    </div>
+    </header>
   )
 }
 
