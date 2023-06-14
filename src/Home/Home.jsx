@@ -6,7 +6,10 @@ import SegundaSeccion from "./Segunda-seccion";
 const Home = () => {
   return (
     <div className="overflow-x-hidden">
-      <HeroSection Navegacion={<Layout />} />
+      <div className="bg-red-900">
+        <Layout />
+        <HeroSection />
+      </div>
       <PrimeraSeccion />
       <SegundaSeccion />
     </div>

@@ -18,16 +18,26 @@ const SegundaSeccion = () => {
         </svg>
       </div>
       <div className="w-1200 max-w-full mx-auto">
-        <div className="w-1/2 float-right">
-          <h2 className=" text-right text-5xl text-white">
+        <div className="flex justify-end">
+          <h2 className="w-full md:w-1/2 text-center md:text-right text-[6vw] md:text-5xl text-white p-3">
             ¡Una comunidad activa y colaborativa!
           </h2>
         </div>
-        <div className="flex">
+        <div className="flex md:flex-row flex-col-reverse p-10 gap-5">
           <section className="flex-1">
             <img src={Imagen} alt="Imagen grupo colaborativo" />
           </section>
-          <section className="flex-1">hola</section>
+          <ul className="flex-1 flex flex-col justify-center gap-5">
+            <li className="text-[3.4vw] md:text-xl bg-white p-3 md:p-4 rounded-2xl">
+              Comparte tus conocimientos
+            </li>
+            <li className="text-[3.4vw] md:text-xl bg-white p-3 md:p-4 rounded-2xl">
+              Resuelve tus dudas
+            </li>
+            <li className="text-[3.4vw] md:text-xl bg-white p-3 md:p-4 rounded-2xl">
+              Colabora en diversos proyectos
+            </li>
+          </ul>
         </div>
       </div>
     </div>

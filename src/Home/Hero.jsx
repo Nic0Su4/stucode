@@ -14,19 +14,19 @@ const HeroSection = () => {
         src={Hero}
         alt="Imagen principal de la página de inicio de StuCode"
       />
-      <h2 className="text-white text-center text-4xl font-medium pt-4">
+      <h2 className=" text-white text-center md:text-3xl text-[3.4vw] font-medium pt-1 md:pt-4">
         Sueña, programa y conquista
       </h2>
-      <h1 className="text-white text-center text-6xl font-extrabold pt-4">
+      <h1 className="text-white text-center text-[7vw] md:text-6xl font-extrabold pt-2 md:pt-4">
         Sin límites ni barreras
       </h1>
-      <p className="text-white mx-auto text-center w-3/5 p-4">
+      <p className="text-white mx-auto text-center md:text-3xl text-[3.2vw] w-4/5 md:w-3/5 p-2 md:p-4">
         Descubre una plataforma inclusiva, inspiradora y llena de oportunidades
         para alcanzar tus metas en el fascinante campo de la programación.
       </p>
       <a
         href=""
-        className="text-red-600 mx-auto text-center text-xl font-medium px-8 py-3 bg-white rounded-xl mb-4 hover:bg-gray-300 hover:text-red-700 transition duration-300 ease-in-out"
+        className="text-red-600 mx-auto text-center text-xs md:text-xl font-medium px-8 py-3 bg-white rounded-xl mb-4 hover:bg-gray-300 hover:text-red-700 transition duration-300 ease-in-out"
       >
         ¡Comienza ya!
       </a>
