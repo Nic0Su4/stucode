@@ -1,5 +1,5 @@
 import React from "react";
-import Imagen from "../img/Tecnologias-primera-seccion.png";
+import Imagen from "../../assets/img/Tecnologias-primera-seccion.png";
 const PrimeraSeccion = () => {
   return (
     <div className="max-w-full w-1200 mx-auto p-8">

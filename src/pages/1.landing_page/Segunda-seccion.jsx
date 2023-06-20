@@ -1,6 +1,6 @@
 import React from "react";
 import "./Segunda.css";
-import Imagen from "../img/Grupo-segunda-seccion.png";
+import Imagen from "../../assets/img/Grupo-segunda-seccion.png";
 const SegundaSeccion = () => {
   return (
     <div className="bg-red-700">

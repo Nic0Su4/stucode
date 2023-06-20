@@ -1,5 +1,5 @@
 import HeroSection from "./Hero";
-import Layout from "../Components/Layout";
+import Layout from "../../components/Layout";
 import PrimeraSeccion from "./Primera-seccion";
 import SegundaSeccion from "./Segunda-seccion";
 
