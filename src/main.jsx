@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/1.landing_page/Home";
-import Profile from "./pages/5.profile/profile";
+import Profile from "./pages/4.course_page/course";
 
 const router = createBrowserRouter([
   {
