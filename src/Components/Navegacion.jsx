@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navegacion = ({ isLogged, setIsLogged }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navegacion = ({ isLogged, setIsLogged }) => {
           </button> */}
 
           <ul
-            className={`${isMenuOpen ? "flex" : "hidden"} flexflex-row gap-6`}
+            className={`${isMenuOpen ? "flex" : "hidden"} md:flex md:flex-row gap-6`}
           >
             <li>
               <a href="">Inicio</a>
@@ -35,7 +36,7 @@ const Navegacion = ({ isLogged, setIsLogged }) => {
               <a href="">Comunidad</a>
             </li>
             <li>
-              <a href="">Cursos</a>
+              <Link to="/cursos">Cursos</Link>
             </li>
           </ul>
 
@@ -77,7 +78,7 @@ const Navegacion = ({ isLogged, setIsLogged }) => {
               <a href="">Comunidad</a>
             </li>
             <li>
-              <a href="">Cursos</a>
+              <Link to="/cursos">Cursos</Link>
             </li>
           </ul>
 
