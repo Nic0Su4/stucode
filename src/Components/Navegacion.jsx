@@ -3,14 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Navegacion = ({ isLogged, setIsLogged }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
+const Navegacion = ({ handleMenu }) => {
   return (
+<<<<<<< HEAD
     <div className="w-10/12 pt-4 pb-8 mx-auto text-white">
       {isLogged ? (
         <nav className="flex gap-6 flex-row justify-between items-center h-full">
@@ -56,18 +51,19 @@ const Navegacion = ({ isLogged, setIsLogged }) => {
         <nav className="flex  gap-6 flex-row justify-between items-center align-middle h-full">
           <p className="hover:cursor-pointer">{"StuCode (>'-'<)"}</p>
           {/* 
+=======
+    <div className="w-full sm:w-10/12 pt-4 pb-8 mx-auto text-white">
+      <nav className="flex gap-6 flex-row justify-between items-center align-middle h-full">
+        <section className="flex gap-5 sm:gap-10">
+>>>>>>> 46a5fe7ef83d97fb8abfecc92290dfcf896d52b9
           <button
-            className="block md:hidden ml-4 text-white"
-            onClick={toggleMenu}
+            className="block sm:hidden ml-4 text-white"
+            onClick={handleMenu}
           >
             <FontAwesomeIcon icon={faBars} />
-          </button> */}
-
-          <ul
-            className={`${
-              isMenuOpen ? "flex" : "hidden"
-            } md:flex flex-row md:flex-row gap-6`}
-          >
+          </button>
+          <p className="hover:cursor-pointer">{"StuCode (>'-'<)"}</p>
+          <ul className="hidden lg:flex gap-6">
             <li>
               <a href="">Inicio</a>
             </li>
@@ -81,31 +77,26 @@ const Navegacion = ({ isLogged, setIsLogged }) => {
               <Link to="/cursos">Cursos</Link>
             </li>
           </ul>
-
-          <ul className="flex flex-row gap-6">
-            <li>
-              <button
-                onClick={() => {
-                  setIsLogged(true);
-                }}
-              >
-                Iniciar sesión
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => {
-                  setIsLogged(true);
-                }}
-              >
-                Registrarse
-              </button>
-            </li>
-          </ul>
-        </nav>
-      )}
+        </section>
+        <ul className="hidden sm:flex flex-row gap-1 sm:gap-6">
+          <li>
+            <Button name={"Iniciar sesión"}></Button>
+          </li>
+          <li>
+            <Button className="bg-white text-red-800" name={"Registrarse"} />
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };
 
 export default Navegacion;
+
+const Button = ({ name, className }) => (
+  <button
+    className={`text-[10px] sm:text-sm  font-medium border-2 px-4 py-1 rounded-xl ${className}`}
+  >
+    {name}
+  </button>
+);

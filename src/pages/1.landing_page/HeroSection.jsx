@@ -1,6 +1,7 @@
 import Hero from "../../assets/img/Hero.png";
+import Navegacion from "../../components/Navegacion";
 
-const HeroSection = () => {
+const HeroSection = ({ handleMenu }) => {
   return (
     <div
       style={{
@@ -9,8 +10,9 @@ const HeroSection = () => {
       }}
       className="flex flex-col justify-center items-center"
     >
+      <Navegacion handleMenu={handleMenu} />
       <img
-        className="w-2/3 mx-auto"
+        className="w-10/12 md:w-2/3 mx-auto my-8 "
         src={Hero}
         alt="Imagen principal de la página de inicio de StuCode"
       />
