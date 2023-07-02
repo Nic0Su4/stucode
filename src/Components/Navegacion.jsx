@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navegacion = ({ handleMenu }) => {
   return (
@@ -25,7 +26,7 @@ const Navegacion = ({ handleMenu }) => {
               <a href="">Comunidad</a>
             </li>
             <li>
-              <a href="">Cursos</a>
+              <Link to="/cursos">Cursos</Link>
             </li>
           </ul>
         </section>
