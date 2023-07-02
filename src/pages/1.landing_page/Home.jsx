@@ -1,7 +1,8 @@
-import HeroSection from "./Hero";
+// import HeroSection from "./Hero";
 import Layout from "../../Components/Layout";
 import PrimeraSeccion from "./Primera-seccion";
 import SegundaSeccion from "./Segunda-seccion";
+import HeroSection from "./HeroSection";
 import { useState } from "react";
 
 const Home = () => {
