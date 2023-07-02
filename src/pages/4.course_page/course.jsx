@@ -5,6 +5,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import Header from "../3.main_page/Header";
+import { Link } from "react-router-dom";
 
 const CoursePage = () => {
   const rates = [
@@ -15,15 +17,18 @@ const CoursePage = () => {
     { cups: 1, votaciones: 0 },
   ];
   return (
-    <div>
-      {/* header */}
-      <div className="flex flex-col gap-5 max-w-[800px] w-full mx-auto">
-        <button className="self-start text-red-500 py-2 px-4 rounded-full shadow-lg flex gap-2 items-center">
+    <div className="">
+      <Header />
+      <div className="flex flex-col gap-5 max-w-[800px] w-full mx-auto mt-0 md:mt-20">
+        <Link
+          to="/cursos"
+          className="self-start text-red-500 py-2 px-4 rounded-full shadow-lg flex gap-2 items-center"
+        >
           <FontAwesomeIcon icon={faArrowRightFromBracket} />
           Salir del curso
-        </button>
-        <div className="flex flex-row gap-8">
-          <section className="w-1/2 flex flex-col gap-3">
+        </Link>
+        <div className="flex flex-col lg:flex-row gap-8 px-5">
+          <section className="w-full lg:w-1/2 flex flex-col gap-3">
             <img
               src="https://i.ytimg.com/vi/XqFR2lqBYPs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBJihX_Oxu5bFA4emlycI7XOiP-Bw"
               alt=""
@@ -32,7 +37,7 @@ const CoursePage = () => {
               Ir al curso
             </button>
           </section>
-          <section className="w-1/2 flex flex-col gap-2">
+          <section className="w-full lg:w-1/2 flex flex-col gap-2">
             <h2 className="text-blue-600 font-bold text-3xl">
               Aprende HTML y CSS - Curso Desde Cero
             </h2>
@@ -55,7 +60,7 @@ const CoursePage = () => {
             </ul>
           </section>
         </div>
-        <div className="w-1/2 flex flex-col">
+        <div className="w-full lg:w-1/2 flex flex-col px-5">
           <section className="flex gap-5 items-center">
             <h3 className="text-gray-500 text-xl">Califica el curso:</h3>
             <FontAwesomeIcon

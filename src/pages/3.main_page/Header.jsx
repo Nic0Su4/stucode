@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="w-10/12 mx-auto flex flex-row justify-between items-center">
-      <Link
-        to="/"
-        className="text-red-700 font-semibold">{"StuCode (>'-'<)"}</Link>
-      
+      <Link to="/" className="text-red-700 font-semibold">
+        {"StuCode (>'-'<)"}
+      </Link>
+
       <Link
         to="/perfil"
         className="mt-2 text-white text-center

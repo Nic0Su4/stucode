@@ -2,6 +2,7 @@ import React from "react";
 import User from "../../assets/img/user.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
+import Header from "../3.main_page/Header";
 const Profile = () => {
   const skills = [
     { id: 1, skill: "Programador" },
@@ -10,19 +11,19 @@ const Profile = () => {
     { id: 4, skill: "Css3" },
   ];
   return (
-    <div>
-      {/* Header */}
-      <div className="max-w-full w-[800px] m-auto">
-        <div className="flex gap-5 p-12 flex-row rounded-3xl shadow-xl ">
-          <section className="w-1/2 flex flex-col gap-2">
-            <img className="w-10/12 mx-auto" src={User} alt="" />
+    <div className="px-5">
+      <Header />
+      <div className="max-w-full w-[800px] m-auto mt-0 md:mt-20">
+        <div className="flex gap-5 p-12 flex-col md:flex-row rounded-3xl shadow-xl ">
+          <section className="w-full md:w-1/2 flex flex-col gap-2">
+            <img className="w-6/12 md:w-10/12 mx-auto" src={User} alt="" />
             <section className="flex flex-wrap gap-2">
               {skills.map((skill) => (
                 <ButtonSkills key={skill.id} name={skill.skill} />
               ))}
             </section>
           </section>
-          <section className="w-1/2 flex flex-col gap-5">
+          <section className="w-full md:w-1/2 flex flex-col gap-5">
             <h2 className="font-bold text-gray-500 text-3xl">
               Pedro Nicolás Suarez Vera
             </h2>
