@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/1.landing_page/Home";
 import Cursos from "./pages/3.main_page/PrincipalCursos";
 import Profile from "./pages/5.profile/profile";
+import Profile from "./pages/4.course_page/course";
 
 const router = createBrowserRouter([
   {
