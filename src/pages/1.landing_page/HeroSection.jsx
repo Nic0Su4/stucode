@@ -1,5 +1,5 @@
 import Hero from "../../assets/img/Hero.png";
-import Navegacion from "../../components/Navegacion";
+import Navegacion from "../../Components/Navegacion";
 
 const HeroSection = ({ handleMenu }) => {
   return (
